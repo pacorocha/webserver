@@ -1,0 +1,50 @@
+server {
+	listen 8088;
+	server_name localhost;
+
+	location / {
+		root /webserver/html;
+		index start.html;
+		autoindex off;
+		allowed_methods GET;
+	}
+
+	location /location {
+		root /webserver/html/location;
+		index location.html;
+		autoindex off;
+		allowed_methods GET;
+	}
+}
+
+server {
+	listen 8089;
+	server_name localhost;
+
+	location / {
+		root /webserver/html/redirect;
+		index redirected_page.html;
+		autoindex off;
+		allowed_methods GET;
+	}
+
+	location /methods {
+		root webserver/html/methods;
+		index get.html;
+		autoindex off;
+		allowed_methods GET POST;
+	}
+}
+
+server {
+	listen 8090;
+	server_name localhost;
+
+	location / {
+		root /webserver/html;
+		index addition.html;
+		autoindex off;
+		allowed_methods GET;
+	}
+
+}

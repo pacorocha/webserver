@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to our webserver!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .container {
+            position: absolute;
+            top: 15px;
+            bottom: 15px;
+            left: 15px;
+            right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #9fa3cd;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #0f124f;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .screen {
+            font-family: 'Courier New', sans-serif;
+            line-height: 1.5;
+            background-color: #000;
+            color: #03c63d;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            padding: 10px 20px;
+            border-radius: 15px;
+            width: 450px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn {
+            display: inline-block;
+            color: #03c63d;
+            background: transparent;
+            padding: 10px 15px;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+            border: solid 1px #03c63d;
+            margin-bottom: 15px;
+        }
+        .btn:hover {
+            color: #50f982;
+            border: solid 1px #50f982;
+        }
+        .btn:active {
+            border: solid 2px #50f982;
+        }
+    </style>
+</head>
+    <body>
+        <div class="container">
+            <div class="content">
+            <h1>Welcome to our webserver</h1>
+              <div class="screen">
+                <p>These pages were made to simplify the evaluation process and to help you understand better the nuances of the webserver project.<br>Click the button to continue.</p>
+                <a class="btn" href="/location">continue</a>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>

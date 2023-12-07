@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition Form</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          background-color: #fff;
+        }
+
+        .container {
+          position: absolute;
+          top: 15px;
+          bottom: 15px;
+          left: 15px;
+          right: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #9fa3cd;
+          border-radius: 10px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+        }
+
+        .content {
+          display: flex;
+          flex-direction: column;
+        }
+
+        h1 {
+          font-size: 48px;
+          color: #0f124f;
+        }
+
+        p {
+          font-size: 18px;
+          margin-top: 20px;
+        }
+
+        a {
+          text-decoration: none;
+          color: #007bff;
+        }
+        .screen {
+          font-family: "Courier New", sans-serif;
+          line-height: 1.5;
+          background-color: #000;
+          color: #03c63d;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+          padding: 10px 20px;
+          border-radius: 15px;
+          width: 450px;
+          max-width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .btn {
+          display: inline-block;
+          color: #03c63d;
+          background: transparent;
+          padding: 10px 15px;
+          border-radius: 15px;
+          border: none;
+          cursor: pointer;
+          border: solid 1px #03c63d;
+          margin-bottom: 15px;
+          min-width: 150px;
+        }
+        .btn:hover {
+            color: #50f982;
+            border: solid 1px #50f982;
+        }
+        .btn:active {
+            border: solid 2px #50f982;
+        }
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 20px;
+          width: 100%;
+          height: auto;
+        }
+        .mb-3 {
+            margin-bottom: 20px;
+        }
+        .form-control {
+            display: block;
+            width: calc(100% - 30px);
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #03c63d;;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: #000;
+            background-clip: padding-box;
+            border: 1px solid #03c63d;;
+            border-radius: 10px;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+      </style>
+</head>
+    <body>
+        <div class="container">
+            <div class="content">
+            <h1>Addition Form</h1>
+                <div class="screen">
+                    <form action="add.php" method="get">
+                        <div class="mb-3">
+                            <label for="num1" class="form-label">Number 1:</label>
+                            <input class="form-control" type="number" name="num1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="num2">Number 2:</label>
+                            <input class="form-control" type="number" name="num2" required>
+                        </div>
+                        <input class="btn btn-primary" type="submit" value="Add">
+                    </form>
+                </div>
+            </div>
+          </div>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+obj
+*.o
+Tests/obj
+Tests/*.o
+a.out
+.cache/
+*.json
